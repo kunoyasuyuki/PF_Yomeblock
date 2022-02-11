@@ -73,30 +73,30 @@ html {
 
 .blockImgAbove {
   position: absolute;
-  top: 22vw;
+  top: 23vw;
   width: 10vw;
-  left: calc(50% - 24vw);
+  left: calc(50% - 28vw);
 }
 
 .blockImgSecond {
   position: absolute;
-  top: 29vw;
+  top: 30vw;
   width: 10vw;
-  left: calc(50% - 24vw);
+  left: calc(50% - 28vw);
 }
 
 .blockImgThird {
   position: absolute;
-  top: 36vw;
+  top: 37vw;
   width: 10vw;
-  left: calc(50% - 24vw);
+  left: calc(50% - 28vw);
 }
 
 .blockImgFourth {
   position: absolute;
-  top: 43vw;
+  top: 44vw;
   width: 10vw;
-  left: calc(50% - 24vw);
+  left: calc(50% - 28vw);
 }
 
 .kadenImg {

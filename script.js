@@ -12,6 +12,9 @@ const secondBlock = document.getElementById('blockSecond')
 const thirdBlock = document.getElementById('blockThird')
 const fourthBlock = document.getElementById('blockFourth')
 
+const fadeIn = document.getElementById('fade')
+
+var count = 0
 // おじさんを1秒後に1秒かけて座標(500, 150)へアニメーションさせる
 //
 /**
@@ -78,15 +81,14 @@ const modal = function () {
 startButton.addEventListener('click', function () {
   startDialog.remove()
   modalWrapper.style.visibility = 'hidden'
-  animateTranslate('oji', 10000, -800, 0, 1000)
+  animateTranslate('oji', 5000, -800, 0, 1000)
+  setTimeout('gameResult()', 5000)
 })
 ;('use strict')
 const body = document.querySelector('body')
 const background = document.querySelector('.background')
 const countDisplay = document.querySelector('.countDisplay')
 const result = document.querySelector('.result')
-
-let count = 0
 
 // パソコンかスマートフォンか判定
 const eventType = window.ontouchstart !== null ? 'click' : 'touchstart'
@@ -119,6 +121,38 @@ const addCount = function (e) {
     document.getElementById('blockFourth').style.visibility = 'hidden'
   }
 }
+
+// START押下時
+function gameResult() {
+  // 結果の浮き出し文字制御
+  fadeIn.classList.add('blur')
+  modalWrapper.style.visibility = 'visible'
+
+  const countDisplay = document.querySelector('.countDisplay')
+  var num = Number(countDisplay.textContent)
+
+  if (num > 10) {
+    fadeIn.innerText = 'やばい！'
+    resultTitle.innerText = '嫁めっちゃ怒ってるぞww！！'
+    resultBody.innerHTML =
+      'あっ、嫁からLINEだ。「GPSついてるからね？。。」あっっ！？（汗）。。。。またチャレンジしてくれよな！'
+  }
+
+  if (num > 25) {
+    fadeIn.innerText = '激突！！'
+    resultTitle.innerText = '嫁ブロック突破失敗だ！！'
+    resultBody.innerHTML = 'あっ、嫁から留守電だ。。。20件も来てるwww 今日は撤退だ！！またチャレンジしような！！！！！'
+  }
+  if (num > 34) {
+    fadeIn.innerText = '突破！！'
+    resultTitle.innerText = '嫁ブロックを突破したぞ！！'
+    resultBody.innerHTML =
+      '嫁の包囲網を突破したぞ！今月の給料は全てガジェットへ投資して一流エンジニアなってやる！！！！'
+  }
+  // 結果モーダル出力
+  setTimeout(modal, 3000)
+}
+
 // 背景を縮めるアニメーション
 const shrinkAnim = function () {
   countDisplay.classList.remove('blink')
@@ -132,12 +166,12 @@ const shrinkAnim = function () {
         opacity: [1, 0.5, 1],
         offset: [0, 0.9],
       },
-      { duration: 5000, fill: 'forwards' }
+      { duration: 4700, fill: 'forwards' }
     )
     .finished // ゲーム終了後の処理
     .then(() => {
       body.removeEventListener(eventType, addCount)
-      result.textContent = 'Click to return'
+      result.textContent = 'push! push!'
       result.classList.add('blink')
       result.addEventListener('click', () => {
         location.reload()
