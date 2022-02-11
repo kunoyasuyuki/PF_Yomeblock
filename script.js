@@ -135,19 +135,17 @@ function gameResult() {
     fadeIn.innerText = 'やばい！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞww！！'
     resultBody.innerHTML =
-      'あっ、嫁からLINEだ。「GPSついてるからね？。。」あっっ！？（汗）。。。。またチャレンジしてくれよな！'
+      'あっ、嫁からLINEだ。「GPSついてるからね？。。」あっっ！？（汗）。。。。またチャレンジしてくれ！'
   }
-
   if (num > 25) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
-    resultBody.innerHTML = 'あっ、嫁から留守電だ。。。20件も来てるwww 今日は撤退だ！！またチャレンジしような！！！！！'
+    resultBody.innerHTML = 'あっ、嫁から留守電だ。。。20件も来てるwww 今日は撤退だ！！またチャレンジしてくれ！'
   }
   if (num > 34) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
-    resultBody.innerHTML =
-      '嫁の包囲網を突破したぞ！今月の給料は全てガジェットへ投資して一流エンジニアなってやる！！！！'
+    resultBody.innerHTML = '嫁の包囲網を突破したぞ！今月の給料は全てガジェットへ投資して一流エンジニアなってやる！'
   }
   // 結果モーダル出力
   setTimeout(modal, 3000)
