@@ -18,14 +18,6 @@ a.btn--radius {
 }
 .container {
   margin-top: 23vh;
-  /* position: absolute;
-  top: 15vw;
-  width: 125vw;
-  left: calc(50% - 45vw); */
-  /* margin-top: 10vw;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .ground {
@@ -58,12 +50,27 @@ html {
 }
 /* ここから */
 .ojiImg {
+  z-index: -2;
   position: absolute;
-  top: 25vh;
+  top: 21vh;
   width: 50vw;
   left: calc(50% + 5vw);
 }
+.ojiMove {
+  animation-name: ojiAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: １;
+  animation-fill-mode: forwards;
+}
 
+@keyframes ojiAnimation {
+  0% {
+    left: calc(50% + 5vw);
+  }
+  100% {
+    left: calc(50% - 43vw);
+  }
+}
 /* ここから */
 .yomeImg {
   position: absolute;
@@ -73,36 +80,55 @@ html {
 }
 
 .blockImgAbove {
+  z-index: -1;
   position: absolute;
-  top: 23vw;
-  width: 10vw;
+  top: 5vw;
+  width: 15vw;
   left: calc(50% - 28vw);
 }
 
 .blockImgSecond {
+  z-index: -1;
   position: absolute;
-  top: 30vw;
-  width: 10vw;
+  top: 15vw;
+  width: 15vw;
   left: calc(50% - 28vw);
 }
 
 .blockImgThird {
+  z-index: -1;
   position: absolute;
-  top: 37vw;
-  width: 10vw;
+  top: 25vw;
+  width: 15vw;
   left: calc(50% - 28vw);
 }
 
 .blockImgFourth {
+  z-index: -1;
   position: absolute;
-  top: 44vw;
-  width: 10vw;
+  top: 35vw;
+  width: 15vw;
+  left: calc(50% - 28vw);
+}
+
+.blockImgFifth {
+  z-index: -1;
+  position: absolute;
+  top: 45vw;
+  width: 15vw;
+  left: calc(50% - 28vw);
+}
+
+.blockImgSixth {
+  z-index: -1;
+  position: absolute;
+  top: 52vw;
+  width: 15vw;
   left: calc(50% - 28vw);
 }
 
 .kadenImg {
   position: absolute;
-  z-index: 1;
   top: 14vh;
   width: 45vw;
   left: calc(50% - 68vw);
