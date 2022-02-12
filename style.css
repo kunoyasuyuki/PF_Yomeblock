@@ -17,10 +17,15 @@ a.btn--radius {
   font-size: 3rem;
 }
 .container {
-  position: absolute;
+  margin-top: 23vh;
+  /* position: absolute;
   top: 15vw;
   width: 125vw;
-  left: calc(50% - 45vw);
+  left: calc(50% - 45vw); */
+  /* margin-top: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .ground {
@@ -54,7 +59,7 @@ html {
 /* ここから */
 .ojiImg {
   position: absolute;
-  top: 25vw;
+  top: 25vh;
   width: 50vw;
   left: calc(50% + 5vw);
 }
@@ -62,7 +67,7 @@ html {
 /* ここから */
 .yomeImg {
   position: absolute;
-  top: 13vw;
+  top: 13vh;
   width: 40vw;
   left: calc(50% + 10vw);
 }
@@ -98,17 +103,9 @@ html {
 .kadenImg {
   position: absolute;
   z-index: 1;
-  top: 14vw;
+  top: 14vh;
   width: 45vw;
   left: calc(50% - 68vw);
-}
-
-.staffImg {
-  position: absolute;
-  z-index: 1;
-  top: 35vw;
-  width: 25vw;
-  left: calc(50% - 62vw);
 }
 
 img {
@@ -213,6 +210,10 @@ element.style {
   left: 0;
 }
 
+.modal-content {
+  z-index: 1;
+}
+
 .modal {
   width: 80%;
   margin: 180px auto 0;
@@ -258,8 +259,8 @@ body {
   height: 100%;
 }
 .background {
-  width: 350px;
-  height: 350px;
+  width: 40vw;
+  height: 40vw;
   border-radius: 50%;
   background: #ffcccc;
   position: relative;
@@ -268,9 +269,12 @@ body {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 .countDisplay {
-  font-size: 96px;
+  font-size: 10vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -320,4 +324,10 @@ body {
   100% {
     font-weight: 700;
   }
+}
+
+.backgroundWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

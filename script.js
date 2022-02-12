@@ -15,6 +15,8 @@ const fourthBlock = document.getElementById('blockFourth')
 const fadeIn = document.getElementById('fade')
 
 var count = 0
+// keyframsを作成する。htmlでトリガー作る。開始ボタン押されたら、cssアニメ
+
 // おじさんを1秒後に1秒かけて座標(500, 150)へアニメーションさせる
 //
 /**
@@ -103,6 +105,7 @@ const addCount = function (e) {
   mash.style.top = y + 'px'
   mash.style.left = x + 'px'
   document.body.appendChild(mash)
+  console.log(mash)
   mash.className = 'mash'
   mash.addEventListener('animationend', () => {
     mash.parentNode.removeChild(mash)
@@ -159,8 +162,8 @@ const shrinkAnim = function () {
   background
     .animate(
       {
-        width: ['350px', '0px'],
-        height: ['350px', '0px'],
+        width: ['40vw', '0vw'],
+        height: ['40vw', '0vw'],
         opacity: [1, 0.5, 1],
         offset: [0, 0.9],
       },
