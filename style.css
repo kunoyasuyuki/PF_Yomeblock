@@ -8,25 +8,21 @@ a.btn--orange:hover {
   color: #fff;
   background: #f56500;
 }
-
 a.btn--radius {
   border-radius: 100vh;
 }
-
 .btn {
   font-size: 3rem;
 }
 .container {
-  margin-top: 23vh;
+  margin-top: 10vh;
 }
-
 .ground {
   position: absolute;
   top: 10vw;
   width: 125vw;
   z-index: -2;
 }
-
 html body {
   background-color: #ffff;
   overflow: hidden;
@@ -35,14 +31,12 @@ html body {
   height: 100vh;
   margin: 0;
 }
-
 HTML CSS Result Skip Results Iframe *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -52,7 +46,7 @@ html {
 .ojiImg {
   z-index: -2;
   position: absolute;
-  top: 21vh;
+  top: 36vh;
   width: 50vw;
   left: calc(50% + 5vw);
 }
@@ -62,7 +56,6 @@ html {
   animation-iteration-count: １;
   animation-fill-mode: forwards;
 }
-
 @keyframes ojiAnimation {
   0% {
     left: calc(50% + 5vw);
@@ -74,79 +67,71 @@ html {
 /* ここから */
 .yomeImg {
   position: absolute;
-  top: 13vh;
+  top: 30vh;
   width: 40vw;
   left: calc(50% + 10vw);
 }
-
 .blockImgAbove {
   z-index: -1;
   position: absolute;
-  top: 5vw;
-  width: 15vw;
+  top: 25vh;
+  height: 20vh;
+  width: 10vh;
   left: calc(50% - 28vw);
 }
-
 .blockImgSecond {
   z-index: -1;
   position: absolute;
-  top: 15vw;
-  width: 15vw;
+  top: 30vh;
+  width: 10vh;
   left: calc(50% - 28vw);
 }
-
 .blockImgThird {
   z-index: -1;
   position: absolute;
-  top: 25vw;
-  width: 15vw;
+  top: 35vh;
+  width: 10vh;
   left: calc(50% - 28vw);
 }
-
 .blockImgFourth {
   z-index: -1;
   position: absolute;
-  top: 35vw;
-  width: 15vw;
+  top: 40vh;
+  width: 10vh;
   left: calc(50% - 28vw);
 }
-
 .blockImgFifth {
   z-index: -1;
   position: absolute;
-  top: 45vw;
-  width: 15vw;
+  top: 60vh;
+  width: 10vh;
   left: calc(50% - 28vw);
 }
-
 .blockImgSixth {
   z-index: -1;
   position: absolute;
-  top: 52vw;
-  width: 15vw;
+  top: 75vh;
+  width: 10vh;
   left: calc(50% - 28vw);
+  height: 20vh;
 }
-
 .kadenImg {
   position: absolute;
-  top: 14vh;
+  top: 31vh;
   width: 45vw;
   left: calc(50% - 68vw);
 }
-
 .pcImg {
   position: absolute;
-  top: 26vh;
+  top: 40vh;
   width: 22vw;
   left: calc(50% - 50vw);
   z-index: -1;
 }
-
 img {
   width: 100%;
   transform: translate(50px, 50px);
 }
-
 #target,
 #result {
   font-size: 32px;
@@ -155,15 +140,12 @@ img {
   height: 60px;
   line-height: 60px;
 }
-
 #start {
   float: left;
 }
-
 #stop {
   margin: 0 auto;
 }
-
 #start {
   cursor: pointer;
   font-size: 18px;
@@ -173,31 +155,25 @@ img {
   line-height: 40px;
   box-shadow: 0 6px #ccc;
 }
-
 #result.standby {
   opacity: 0.5;
 }
-
 #result.perfect {
   background: #fa5858;
   color: #fff;
 }
-
 #start.pushed,
 #stop.pushed {
   margin-top: 3px;
   box-shadow: 0 3px 0 #ccc;
 }
-
 element.style {
   z-index: -1;
 }
-
 .modal {
   max-width: 80%;
   margin: 10px auto;
 }
-
 /* ふわっと出る結果エリア */
 #fade {
   position: absolute;
@@ -205,13 +181,11 @@ element.style {
   -webkit-text-stroke-color: whitesmoke;
   -webkit-text-stroke-width: 2px;
 }
-
 .blur {
   animation-name: blurAnime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
 @keyframes blurAnime {
   from {
     filter: blur(10px);
@@ -247,16 +221,13 @@ element.style {
 .modal-content {
   z-index: 1;
 }
-
 .modal {
   width: 80%;
   margin: 180px auto 0;
 }
-
 .modal-footer {
   justify-content: center;
 }
-
 .btn-circle-3d {
   display: inline-block;
   text-decoration: none;
@@ -303,9 +274,6 @@ body {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .countDisplay {
   font-size: 10vw;
@@ -364,4 +332,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-secondary {
+  font-size: 15px;
+}
+
+.btn-info {
+  font-size: 15px;
 }

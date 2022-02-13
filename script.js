@@ -64,7 +64,6 @@ const addCount = function (e) {
   mash.style.top = y + 'px'
   mash.style.left = x + 'px'
   document.body.appendChild(mash)
-  console.log(mash)
   mash.className = 'mash'
   mash.addEventListener('animationend', () => {
     mash.parentNode.removeChild(mash)
@@ -97,9 +96,9 @@ function gameResult() {
   var num = Number(countDisplay.textContent)
 
   if (num > 10) {
-    fadeIn.innerText = 'やばい！'
-    resultTitle.innerText = '嫁めっちゃ怒ってるぞww！！'
-    resultBody.innerHTML = 'あっ、嫁からLINEだ。お使いの依頼だ！今日は撤退だ！！またチャレンジしてくれ！'
+    fadeIn.innerText = '残念！！'
+    resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
+    resultBody.innerHTML = 'あっ、嫁からLINEだ。今日は撤退だ！！またチャレンジしてくれ！'
   }
   if (num > 25) {
     fadeIn.innerText = '激突！！'
@@ -113,7 +112,7 @@ function gameResult() {
     resultBody.innerHTML = '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！'
   }
   // 結果モーダル出力
-  setTimeout(modal, 3000)
+  setTimeout(modal, 10)
 }
 
 // 背景を縮めるアニメーション
@@ -144,17 +143,10 @@ body.addEventListener(eventType, shrinkAnim)
 
 function tweet() {
   var resultTitle = fadeIn.innerText
-  const dataText =
-    resultTitle +
-    '!!\nきみの記録は' +
-    this.elapsedTime +
-    '秒だ！' +
-    '目標とのタイム差は' +
-    Math.abs(diff).toFixed(3) +
-    '秒だったぞ！また挑戦してくれよな！！'
-  const dataUrl = 'https://zealous-heyrovsky-308820.netlify.app/'
+  const dataText = '!!\nきみの記録は' + fadeIn.innerText + '秒だったぞ！また挑戦してくれよな！！'
+  const dataUrl = 'https://infallible-chandrasekhar-86218b.netlify.app/'
   const dataVia = 'kunoyasu'
-  const dataHashtags = 'ロケット' + '&hashtags=個人開発' + '&hashtags=クソアプリ'
+  const dataHashtags = '嫁ブロック' + '&hashtags=個人開発' + '&hashtags=クソアプリ'
 
   window.open(
     'https://twitter.com/intent/tweet?&text=' +
