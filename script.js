@@ -99,19 +99,18 @@ function gameResult() {
   if (num > 10) {
     fadeIn.innerText = 'やばい！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞww！！'
-    resultBody.innerHTML =
-      'あっ、嫁からLINEだ。「GPSついてるからね？。。」あっバレた！（汗）。。。。またチャレンジしてくれ！'
+    resultBody.innerHTML = 'あっ、嫁からLINEだ。お使いの依頼だ！今日は撤退だ！！またチャレンジしてくれ！'
   }
   if (num > 25) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
-      'あっ、嫁から留守電だ。。。まじかよ。20件も来てるよwww 今日は撤退だ！！またチャレンジしてくれ！'
+      'あっ、嫁から留守電だ。。。まじかよ。20件も来てるぞ！！今日は撤退だ！！またチャレンジしてくれ！'
   }
   if (num > 34) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
-    resultBody.innerHTML = '嫁の包囲網を突破したぞ！今月の給料は全てガジェットへ投資して一流エンジニアなってやる！'
+    resultBody.innerHTML = '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！'
   }
   // 結果モーダル出力
   setTimeout(modal, 3000)
@@ -142,3 +141,31 @@ const shrinkAnim = function () {
     })
 }
 body.addEventListener(eventType, shrinkAnim)
+
+function tweet() {
+  var resultTitle = fadeIn.innerText
+  const dataText =
+    resultTitle +
+    '!!\nきみの記録は' +
+    this.elapsedTime +
+    '秒だ！' +
+    '目標とのタイム差は' +
+    Math.abs(diff).toFixed(3) +
+    '秒だったぞ！また挑戦してくれよな！！'
+  const dataUrl = 'https://zealous-heyrovsky-308820.netlify.app/'
+  const dataVia = 'kunoyasu'
+  const dataHashtags = 'ロケット' + '&hashtags=個人開発' + '&hashtags=クソアプリ'
+
+  window.open(
+    'https://twitter.com/intent/tweet?&text=' +
+      dataText +
+      '%0a&' +
+      '&url=' +
+      dataUrl +
+      '%0a&' +
+      '&via=' +
+      dataVia +
+      '&hashtags=' +
+      dataHashtags
+  )
+}
