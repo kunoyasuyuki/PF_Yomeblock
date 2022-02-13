@@ -76,13 +76,14 @@ const addCount = function (e) {
   if (count >= 15) {
     document.getElementById('blockSecond').style.visibility = 'hidden'
   }
-  if (count >= 25) {
+  if (count >= 20) {
     document.getElementById('blockThird').style.visibility = 'hidden'
   }
-  if (count >= 35) {
+  if (count >= 25) {
     document.getElementById('blockFourth').style.visibility = 'hidden'
     document.getElementById('blockFifth').style.visibility = 'hidden'
     document.getElementById('blockSixth').style.visibility = 'hidden'
+    document.getElementById('kaden').style.visibility = 'hidden'
   }
 }
 

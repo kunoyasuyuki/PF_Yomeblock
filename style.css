@@ -134,6 +134,14 @@ html {
   left: calc(50% - 68vw);
 }
 
+.pcImg {
+  position: absolute;
+  top: 26vh;
+  width: 22vw;
+  left: calc(50% - 50vw);
+  z-index: -1;
+}
+
 img {
   width: 100%;
   transform: translate(50px, 50px);
