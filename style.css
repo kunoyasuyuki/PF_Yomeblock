@@ -71,49 +71,15 @@ html {
   width: 40vw;
   left: calc(50% + 10vw);
 }
-.blockImgAbove {
+.blockImg {
   z-index: -1;
-  position: absolute;
-  top: 25vh;
-  height: 20vh;
-  width: 10vh;
-  left: calc(50% - 28vw);
+  width: 10vw;
 }
-.blockImgSecond {
-  z-index: -1;
+
+.blockWrapper {
   position: absolute;
   top: 30vh;
-  width: 10vh;
   left: calc(50% - 28vw);
-}
-.blockImgThird {
-  z-index: -1;
-  position: absolute;
-  top: 35vh;
-  width: 10vh;
-  left: calc(50% - 28vw);
-}
-.blockImgFourth {
-  z-index: -1;
-  position: absolute;
-  top: 40vh;
-  width: 10vh;
-  left: calc(50% - 28vw);
-}
-.blockImgFifth {
-  z-index: -1;
-  position: absolute;
-  top: 60vh;
-  width: 10vh;
-  left: calc(50% - 28vw);
-}
-.blockImgSixth {
-  z-index: -1;
-  position: absolute;
-  top: 75vh;
-  width: 10vh;
-  left: calc(50% - 28vw);
-  height: 20vh;
 }
 .kadenImg {
   position: absolute;
