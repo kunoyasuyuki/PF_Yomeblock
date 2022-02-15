@@ -43,6 +43,8 @@ startButton.addEventListener('click', function () {
   startDialog.remove()
   move()
   modalWrapper.style.visibility = 'hidden'
+  body.addEventListener(eventType, shrinkAnim)
+  body.addEventListener(eventType, addCount)
   setTimeout('gameResult()', 5000)
 })
 ;('use strict')
@@ -119,7 +121,7 @@ function gameResult() {
 const shrinkAnim = function () {
   countDisplay.classList.remove('blink')
   body.removeEventListener(eventType, shrinkAnim)
-  body.addEventListener(eventType, addCount)
+
   background
     .animate(
       {
@@ -139,7 +141,6 @@ const shrinkAnim = function () {
       })
     })
 }
-body.addEventListener(eventType, shrinkAnim)
 
 function tweet() {
   var resultTitle = fadeIn.innerText
