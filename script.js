@@ -43,8 +43,9 @@ startButton.addEventListener('click', function () {
   startDialog.remove()
   move()
   modalWrapper.style.visibility = 'hidden'
-  body.addEventListener(eventType, shrinkAnim)
+  // body.addEventListener(eventType, shrinkAnim)
   body.addEventListener(eventType, addCount)
+  shrinkAnim()
   setTimeout('gameResult()', 5000)
 })
 ;('use strict')
