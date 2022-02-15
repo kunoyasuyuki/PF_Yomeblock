@@ -87,13 +87,26 @@ html {
   width: 45vw;
   left: calc(50% - 68vw);
 }
-.pcImg {
-  position: absolute;
-  top: 40vh;
-  width: 22vw;
-  left: calc(50% - 50vw);
-  z-index: -1;
+
+@media screen and (min-width: 768px) {
+  .pcImg {
+    position: absolute;
+    top: 46vh;
+    width: 25vw;
+    left: calc(50% - 50vw);
+    z-index: -1;
+  }
 }
+@media screen and (max-width: 767px) {
+  .pcImg {
+    position: absolute;
+    top: 35vh;
+    width: 25vw;
+    left: calc(50% - 50vw);
+    z-index: -1;
+  }
+}
+
 img {
   width: 100%;
   transform: translate(50px, 50px);
