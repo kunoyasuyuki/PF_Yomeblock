@@ -149,7 +149,8 @@ const shrinkAnim = function () {
 
 function tweet() {
   var resultTitle = fadeIn.innerText
-  const dataText = '!!\nきみの記録は' + fadeIn.innerText + '秒だったぞ！また挑戦してくれよな！！'
+  const countDisplay = document.querySelector('.countDisplay')
+  const dataText = resultTitle + '!!\nきみの連打記録は' + countDisplay + 'だったぞ！また挑戦してくれよな！！'
   const dataUrl = 'https://infallible-chandrasekhar-86218b.netlify.app/'
   const dataVia = 'kunoyasu'
   const dataHashtags = '嫁ブロック' + '&hashtags=個人開発' + '&hashtags=クソアプリ'
