@@ -100,22 +100,23 @@ function gameResult() {
   const countDisplay = document.querySelector('.countDisplay')
   var num = Number(countDisplay.textContent)
 
-  if (num > 10) {
+  if (num < 19) {
     fadeIn.innerText = '残念！！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
-    resultBody.innerHTML = 'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！今日は撤退だ！！またチャレンジしてくれ！'
+    resultBody.innerHTML =
+      'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
   }
   if (num > 20) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
-      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！わかった今日は撤退だ！！またチャレンジしてくれ！'
+      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
   }
   if (num > 27) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
     resultBody.innerHTML =
-      '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！夫婦生活もその調子でな！！'
+      '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！夫婦生活もその調子でな！！また遊んでくれよな！'
   }
   // 結果モーダル出力
   setTimeout(modal, 10)
