@@ -19,6 +19,8 @@ var count = 0
 function move() {
   const ojiImg = document.getElementById('ojiImg')
   ojiImg.classList.add('ojiMove')
+  const yomeImg = document.getElementById('yomeImg')
+  yomeImg.classList.add('yomeMove')
 }
 
 // ロード時にモーダル表示
@@ -101,18 +103,19 @@ function gameResult() {
   if (num > 10) {
     fadeIn.innerText = '残念！！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
-    resultBody.innerHTML = 'あっ、嫁からLINEだ。今日は撤退だ！！またチャレンジしてくれ！'
+    resultBody.innerHTML = 'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！今日は撤退だ！！またチャレンジしてくれ！'
   }
   if (num > 20) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
-      'あっ、嫁から留守電だ。。。まじかよ。20件も来てるぞ！！今日は撤退だ！！またチャレンジしてくれ！'
+      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！わかった今日は撤退だ！！またチャレンジしてくれ！'
   }
   if (num > 27) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
-    resultBody.innerHTML = '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！'
+    resultBody.innerHTML =
+      '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！夫婦生活もその調子でな！！'
   }
   // 結果モーダル出力
   setTimeout(modal, 10)

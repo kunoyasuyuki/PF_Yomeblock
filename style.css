@@ -71,6 +71,22 @@ html {
   width: 40vw;
   left: calc(50% + 10vw);
 }
+.yomeMove {
+  animation-name: yomeAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: １;
+  animation-fill-mode: forwards;
+}
+@keyframes yomeAnimation {
+  0% {
+    left: calc(50% + 10vw);
+  }
+  100% {
+    left: calc(50% + 5vw);
+    transform: scale(1.2);
+  }
+}
+
 .blockImg {
   z-index: -1;
   width: 10vw;
