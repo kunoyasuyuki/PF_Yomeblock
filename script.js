@@ -81,7 +81,7 @@ const addCount = function (e) {
   if (count >= 20) {
     document.getElementById('blockThird').style.visibility = 'hidden'
   }
-  if (count >= 25) {
+  if (count >= 28) {
     document.getElementById('blockFourth').style.visibility = 'hidden'
     document.getElementById('blockFifth').style.visibility = 'hidden'
     document.getElementById('blockSixth').style.visibility = 'hidden'
@@ -103,13 +103,13 @@ function gameResult() {
     resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
     resultBody.innerHTML = 'あっ、嫁からLINEだ。今日は撤退だ！！またチャレンジしてくれ！'
   }
-  if (num > 25) {
+  if (num > 20) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
       'あっ、嫁から留守電だ。。。まじかよ。20件も来てるぞ！！今日は撤退だ！！またチャレンジしてくれ！'
   }
-  if (num > 34) {
+  if (num > 27) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
     resultBody.innerHTML = '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！'
