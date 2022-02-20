@@ -159,6 +159,7 @@ function tweet() {
     'https://twitter.com/intent/tweet?&text=' +
       dataText +
       '%0a&' +
+      '%0a&' +
       '&url=' +
       dataUrl +
       '%0a&' +
