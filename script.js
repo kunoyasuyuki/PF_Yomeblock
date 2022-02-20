@@ -12,7 +12,7 @@ const secondBlock = document.getElementById('blockSecond')
 const thirdBlock = document.getElementById('blockThird')
 const fourthBlock = document.getElementById('blockFourth')
 
-const fdeIn = document.getElementById('fade')
+const fadeIn = document.getElementById('fade')
 
 var count = 0
 
@@ -83,7 +83,7 @@ const addCount = function (e) {
   if (count >= 20) {
     document.getElementById('blockThird').style.visibility = 'hidden'
   }
-  if (count >= 28) {
+  if (count >= 30) {
     document.getElementById('blockFourth').style.visibility = 'hidden'
     document.getElementById('blockFifth').style.visibility = 'hidden'
     document.getElementById('blockSixth').style.visibility = 'hidden'
@@ -104,19 +104,19 @@ function gameResult() {
     fadeIn.innerText = '残念！！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
     resultBody.innerHTML =
-      'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
+      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
   }
   if (num > 20) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
-      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
+      'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
   }
-  if (num > 27) {
+  if (num > 29) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
     resultBody.innerHTML =
-      '嫁の包囲網を突破したぞ！伝説のPCをゲットした今日から君も強強エンジニアだ！！夫婦生活もその調子でな！！また遊んでくれよな！'
+      '嫁の包囲網を突破したぞ！強めのPC買ったから今日から君も強強エンジニアだ！！夫婦生活もその調子でな！！また遊んでくれよな！'
   }
   // 結果モーダル出力
   setTimeout(modal, 10)
