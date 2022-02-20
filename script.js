@@ -104,13 +104,13 @@ function gameResult() {
     fadeIn.innerText = '残念！！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
     resultBody.innerHTML =
-      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
+      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかったよ！今日は撤退だ！！またチャレンジしてくれよな！'
   }
   if (num > 20) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
-      'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかった！今日は撤退だ！！またチャレンジしてくれよな！'
+      'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかったよ！今日は撤退だ！！またチャレンジしてくれよな！'
   }
   if (num > 29) {
     fadeIn.innerText = '突破！！'
@@ -150,7 +150,7 @@ const shrinkAnim = function () {
 function tweet() {
   var resultTitle = fadeIn.innerText
   const countDisplay = document.querySelector('.countDisplay').innerText
-  const dataText = resultTitle + '!!\nきみの連打記録は' + countDisplay + 'だったぞ！また挑戦してくれよな！！'
+  const dataText = resultTitle + '!!\nきみの連打記録は' + countDisplay + '回だったぞ！また挑戦してくれよな！！'
   const dataUrl = 'https://infallible-chandrasekhar-86218b.netlify.app/'
   const dataVia = 'kunoyasu'
   const dataHashtags = '嫁ブロック' + '&hashtags=個人開発' + '&hashtags=クソアプリ'
