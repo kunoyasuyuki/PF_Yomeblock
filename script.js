@@ -12,7 +12,7 @@ const secondBlock = document.getElementById('blockSecond')
 const thirdBlock = document.getElementById('blockThird')
 const fourthBlock = document.getElementById('blockFourth')
 
-const fadeIn = document.getElementById('fade')
+const fdeIn = document.getElementById('fade')
 
 var count = 0
 
