@@ -83,7 +83,7 @@ const addCount = function (e) {
   if (count >= 20) {
     document.getElementById('blockThird').style.visibility = 'hidden'
   }
-  if (count >= 30) {
+  if (count >= 31) {
     document.getElementById('blockFourth').style.visibility = 'hidden'
     document.getElementById('blockFifth').style.visibility = 'hidden'
     document.getElementById('blockSixth').style.visibility = 'hidden'
@@ -112,7 +112,7 @@ function gameResult() {
     resultBody.innerHTML =
       'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかったよ！今日は撤退だ！！またチャレンジしてくれよな！'
   }
-  if (num > 29) {
+  if (num > 30) {
     fadeIn.innerText = '突破！！'
     resultTitle.innerText = '嫁ブロックを突破したぞ！！'
     resultBody.innerHTML =
