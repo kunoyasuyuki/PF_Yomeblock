@@ -100,25 +100,13 @@ function gameResult() {
   const countDisplay = document.querySelector('.countDisplay')
   var num = Number(countDisplay.textContent)
 
-  if (num < 19) {
+  if (num <= 19) {
     fadeIn.innerText = '残念！！'
     resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
     resultBody.innerHTML =
       'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかったよ！今日は撤退だ！！またチャレンジしてくれよな！'
   }
-  if ((num = 19)) {
-    fadeIn.innerText = '残念！！'
-    resultTitle.innerText = '嫁めっちゃ怒ってるぞ！！'
-    resultBody.innerHTML =
-      'おい！！嫁から留守電だぞ！！「ファミチキ買ってこい。」だと！！ファミチキ美味しいもんね。わかったよ！今日は撤退だ！！またチャレンジしてくれよな！'
-  }
-  if ((num = 20)) {
-    fadeIn.innerText = '激突！！'
-    resultTitle.innerText = '嫁ブロック突破失敗だ！！'
-    resultBody.innerHTML =
-      'あっ、嫁からLINEだぞ！！「牛乳買ってこい」だと！！カルシウム取ると優しくなるもんね。わかったよ！今日は撤退だ！！またチャレンジしてくれよな！'
-  }
-  if (num > 20) {
+  if (num >= 20) {
     fadeIn.innerText = '激突！！'
     resultTitle.innerText = '嫁ブロック突破失敗だ！！'
     resultBody.innerHTML =
