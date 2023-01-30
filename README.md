@@ -12,6 +12,7 @@ https://infallible-chandrasekhar-86218b.netlify.app/
 
 <a href="https://gyazo.com/66bc225bad3d7652384f60b3e10ca548"><img src="https://i.gyazo.com/66bc225bad3d7652384f60b3e10ca548.gif" alt="Image from Gyazo" width="700"/></a>
 
+
 ### 使用技術
 ・HTML・CSS・BootStrap・JavaScript
 ### プログラムを設置したサーバー
